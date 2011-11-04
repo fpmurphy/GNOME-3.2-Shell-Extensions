@@ -1,0 +1,82 @@
+                           README
+                         ==========  
+
+License
+-------
+
+Copyright (C) 2011 Finnbarr P. Murphy.  All rights reserved.
+
+his program is free software; you can redistribute it and/or
+modify it under the terms of version 2 of the GNU General Public 
+License as published by the Free Software Foundation
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License at 
+
+       http://www.gnu.org/licenses/gpl-2.0.html
+
+for more details and to get a copy of the full license.
+
+
+Notice To Packagers
+-------------------
+
+Please do not package this extension.
+
+
+Version
+-------
+
+v1.0   11/1/2011
+
+
+Purpose:
+--------
+
+Demostrate how to create a simple menu for the GNOME 3.2
+Shell.
+
+
+Installation:
+-------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called demo@fpmurphy.com
+should be created. 
+
+Restart your GNOME shell (Alt-F2 r is one way) and enable the 
+extension using: 
+
+     gnome-shell-extension-tool -e demo@fpmurphy.com
+
+To disable the extension:
+
+     gnome-shell-extension-tool -d demo@fpmurphy.com
+
+Other tools such as gnome-tweak-tool can also be used to
+enable or disable the extension. 
+
+If the extension does not install, check the version number in
+metadate.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+
+
+Misc
+----
+
+Latest version of my GNOME extensions can always be found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions on my blog at:
+
+     http://blog.fpmurphy.com
+
+You can contact me at:
+
+     fpmATfpmurphy.com
