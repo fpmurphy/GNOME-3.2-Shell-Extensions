@@ -1,0 +1,18 @@
+
+/* activitiesbutton.png should be 24x24 PNG icon */
+
+#panelActivities {
+    border: none;
+    background-image: url("activitiesbutton.png");
+    background-position: 4 0;
+    width: 24px;
+    height: 24px;
+    padding-left: 12px;
+    padding-right: 0px;
+    color: rgba(0,0,0,0.0);
+    transition-duration: 100;
+}
+
+#panelActivities:hover {
+    border-image: url("activitiesbutton-border.svg") 10 10 0 2;
+}

@@ -1,0 +1,100 @@
+                           README
+                         ==========  
+
+License:
+--------
+
+Copyright (c) 2011 Finnbarr P. Murphy. All rights Reserved. 
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of VERSION 2 of the GNU General Public 
+License as published by the Free Software Foundation provided
+that the above copyright notice is included.
+ 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+Go to http://www.gnu.org/licenses/gpl-2.0.html to get a copy
+of the license.
+
+
+Notice To Packagers
+-------------------
+
+Please contact me before packaging this extension.
+
+
+Purpose:
+--------
+
+Enable or disable custom theme for the panel Activities Button 
+
+
+Installation:
+-------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called activitiesbutton@fpmurphy.com
+should be created. 
+
+Restart your GNOME shell (Alt-F2 r is one way) and enable the 
+extension using: 
+
+     gnome-shell-extension-tool -e activitiesbutton@fpmurphy.com
+
+To disable the extension:
+
+     gnome-shell-extension-tool -d activitiesbutton@fpmurphy.com
+
+Other tools such as gnome-tweak-tool can also be used to
+enable or disable the extension. 
+
+You can also install it in the global directory
+/usr/share/gnome-shell/extensions.
+ 
+If the extension does not install, check the version number in
+metadate.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+
+Version:
+--------
+
+V2.0  11/08/2011    Initial version for GNOME 3.2
+
+
+Notes:
+------
+
+This has only been tested on Fedora 16 Beta and GNOME Shell 3.2.1
+
+If you have other extensions that monkey patch the theme 
+stylesheet or modify extension stylesheets, the interaction 
+between this extension and any other such extensions may lead 
+to unexpected results.
+
+The icon included with this extension is the default Fedora logo.
+You can use your own icon provided it is a 24x24 PNG icon. Just
+copy the icon to the extension subdirectory and rename it 
+activitiesbutton.png.
+
+You can modify the theming by editing activitiesbutton.css.
+
+
+Misc:
+-----
+
+The latest version of my GNOME extensions can always be found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions on my blog at:
+
+     http://blog.fpmurphy.com
+
+Bugs and enhancement requests to:
+
+     gse@fpmurphy.com

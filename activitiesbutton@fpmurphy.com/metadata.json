@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"],
+   "version": "2.0",
+   "uuid": "activitiesbutton@fpmurphy.com",
+   "name": "Theme Activities Button",
+   "description": "Theme the panel Activities Button",
+   "original-authors": "Finnbarr P. Murphy",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "localedir": "locale"
+}
