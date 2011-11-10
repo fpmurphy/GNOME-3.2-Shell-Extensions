@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"],
+   "version": "2.0",
+   "uuid": "noa11y@fpmurphy.com",
+   "name": "No A11y",
+   "description": "Hide or show accessibility icon/menu",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "localedir"
+}
