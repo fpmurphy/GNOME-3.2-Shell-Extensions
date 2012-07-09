@@ -1,0 +1,147 @@
+.favorites-box {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #666;  
+}
+.favorites-button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;    
+}
+
+.favorites-button:hover {
+    color: white;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+
+.places-box {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border: 0px solid #666;  
+}
+.places-button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;    
+}
+
+.categories-box {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;    
+}
+
+.applications-box {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;    
+}
+
+.applications-scrollbox {
+    height: 300px;
+}
+
+.applications-title {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.favorites-title {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.favorites-title:hover {
+    font-weight: bold;
+}
+
+.application-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;    
+}
+
+.application-button:hover {
+    color: white;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+
+.application-button-label { 
+    padding-left: 5px       
+}
+
+.category-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    font-weight: normal;    
+}
+
+.category-button-selected {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    color: white;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+
+.category-button-label { 
+    padding-left: 5px       
+}
+
+.category-button-button:hover {
+    background-color: #969696;
+    border-radius: 8px;
+}
+
+.selected-app-box {
+    padding-right: 30px;
+    padding-left: 28px;
+    text-align: right;
+}
+
+.selected-app-title {
+    font-weight: bold;
+    font-size: small;
+}
+
+.selected-app-description {
+    max-width: 150px;
+}
+
+.search_box {
+   padding-left: 30px;
+}
