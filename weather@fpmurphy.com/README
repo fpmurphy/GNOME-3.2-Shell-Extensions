@@ -1,0 +1,131 @@
+                           README
+                         ==========  
+
+License
+-------
+
+Copyright (c) 2011, 2012  Finnbarr P. Murphy.  All rights reserved. 
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the Attribution Assurance License. 
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+Go to http://www.opensource.org/licenses to get a copy of the 
+license.
+
+Note this extension includes some source code from the Cinnamon
+distribution.  Copyright of that source code belongs to the 
+respective authors and their license applies.
+
+
+Notice to Packagers
+-------------------
+
+Please contact me before packaging this extension.
+
+Note that I no longer use the GPL license due to the lack
+of safeguards in that licence for author attribution and
+copyright notices.
+
+Please do not place this extension on extensions.gnome.org.
+Until more controls are put in place to respect copyrights,
+I do not want any of my work to be placed on that website.
+
+
+Purpose
+-------
+
+Display current weather conditions and five day forecast.
+
+
+Installation
+------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called weather@fpmurphy.com
+should be created. For global use, install the tarball in
+/usr/share/gnome-shell/extensions and unpack.
+
+Restart your GNOME shell (Alt-F2 r is one way) and enable the
+extension using the supplied extension-tool:
+
+     extension-tool -e weather@fpmurphy.com
+
+To disable the extension:
+
+     extension-tool -d weather@fpmurphy.com
+
+Other tools such as gnome-tweak-tool can also be used to
+enable or disable the extension.
+
+If the extension does not install, check the version number in
+metadata.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+This extension accesses weather data from World Weather Online
+
+     http://www.worldweatheronline.com/
+
+To use this extension, you must sign up and get a free API key
+from World Weather Online.  Sign up is simple and painless.
+
+Once you have an API key, you can configure the extension by right
+clicking on the weather icon and entering the API key and location.
+Location can either be a string such as TOKYO, DUBLIN, IRELAND, or a 
+zipcode such as 01960.
+
+Alternatively you can use the command line weather-tool to customize
+the extension. See
+
+    extension-tool --help
+
+for more information.
+
+This version does not support localized message strings. A
+future version may do so.
+
+
+Version
+-------
+
+V2.0   12/28/2011    Initial release for GNOME Shell 3.2
+V2.2    3/09/2012    Added modal dialog for customization 
+                     Added D-Bus support and weather-tool
+V2.3    3/16/2012    Polished UI 
+V2.4    3/24/2012    Fixed problem with displaying certain locations
+                     Added observation date/time
+
+
+Notes
+-----
+
+This version of the extension does NOT work on versions of
+the GNOME Shell < 3.2.
+
+This has only been tested on Fedora 16 and GNOME Shell 3.2.
+
+As of the date of the latest version of this extension, there are
+no officially published APIs for the GNOME Shell. This extension
+relies on an internal structures which may or may not be present
+in future versions of the GNOME Shell.
+
+
+Misc
+----
+
+The latest version of my GNOME extensions can always be found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions on my blog at:
+
+     http://blog.fpmurphy.com
+
+To report errors or issues:
+
+     gseATfpmurphy.com

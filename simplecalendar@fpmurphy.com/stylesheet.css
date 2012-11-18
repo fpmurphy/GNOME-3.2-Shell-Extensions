@@ -1,0 +1,10 @@
+#rhc-calendar-area {
+    min-width: 200px; 
+}
+
+.rhc-calendar-label {
+    padding: .4em 3em;
+    font-size: 10.5pt;
+    color: #cccccc;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+{
+   "shell-version": [ "3.2" ],
+   "uuid": "rhsmenu@fpmurphy.com",
+   "name": "RHS Mint Menu",
+   "description": "Advanced GNOME Shell Menu",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "localedir": "locale"
+}

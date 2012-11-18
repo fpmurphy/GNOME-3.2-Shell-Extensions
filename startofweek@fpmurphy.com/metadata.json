@@ -1,0 +1,10 @@
+{ 
+   "shell-version": ["3.2"], 
+   "version": "2.0",
+   "uuid": "startofweek@fpmurphy.com",
+   "name": "Start of Week",
+   "description": "Change day that calendar week starts on",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

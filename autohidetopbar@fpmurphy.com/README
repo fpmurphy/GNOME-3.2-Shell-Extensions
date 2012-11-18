@@ -1,0 +1,100 @@
+                           README
+                         ==========  
+
+License:
+--------
+
+Copyright (c) 2011 Finnbarr P. Murphy.  All rights reserved. 
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of VERSION 2 of the GNU General Public 
+License as published by the Free Software Foundation provided
+that the above copyright notice is included.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+Go to http://www.gnu.org/licenses/gpl-2.0.html to get a copy
+of the license.
+
+
+Notice To Packagers
+-------------------
+
+Please contact me before packaging this extension. 
+
+
+Purpose:
+--------
+
+Make the top bar (panel) autohideable.
+
+
+Installation:
+-------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called autohidetopbar@fpmurphy.com
+should be created.  For use by all users, install in
+/usr/share/gnome-shell/extensions.
+ 
+Restart your GNOME shell (Alt-F2 r is one way) and enable the
+extension using:
+
+     gnome-shell-extension-tool -e autohidetopbar@fpmurphy.com
+
+To disable the extension:
+
+     gnome-shell-extension-tool -d autohidetopbar@fpmurphy.com
+
+Other tools such as gnome-tweak-tool, gsettings, dconf-editor,
+etc. can also be used to enable or disable the extension.
+
+If the extension does not install, check the version number in
+metadate.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+
+Version:
+--------
+
+V1.0   6/05/2011    Initial version for GNOME Shell 3.0
+
+V2.0   11/1/2011    Initial version for GNOME Shell 3.2
+
+
+Notes:
+------
+
+This version of the extension does NOT work on versions of
+the GNOME Shell < 3.2.
+
+This has only been tested on Fedora 16 and GNOME Shell 3.2.1.
+
+As of the date of the latest version of this extension, there are
+no officially published APIs for the GNOME Shell. This extension
+relies on internal structures and variables which may or may
+not be present in future versions of the GNOME Shell.
+
+When enabled, you can double click on the top bar to toggle 
+hiding on or off. Increase TIME_DELTA constant if double click 
+does not work on your system.
+
+
+Misc:
+-----
+
+The latest version of my GNOME extensions can always be found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions on my blog at:
+
+     http://blog.fpmurphy.com
+
+Bugs and enhancement requests to:
+
+     gse@fpmurphy.com

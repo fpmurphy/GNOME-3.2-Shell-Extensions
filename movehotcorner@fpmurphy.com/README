@@ -1,0 +1,101 @@
+                           README
+                         ==========  
+
+License:
+--------
+
+Copyright (c) 2011  Finnbarr P. Murphy.  All rights reserved. 
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of VERSION 2 of the GNU General Public 
+License as published by the Free Software Foundation provided
+that the above copyright notice is included.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+Go to http://www.gnu.org/licenses/gpl-2.0.html to get a copy
+of the license.
+
+
+Notice to Packagers
+-------------------
+
+Please contact me before packaging this extension.
+
+
+Version:
+--------
+
+V1.0   7/9/2011    GNOME Shell 3.0
+
+V2.0   11/9/2011   GNOME Shell 3.2 
+
+
+Installation:
+-------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called movehotcorner@fpmurphy.com
+should be created. It can also be installed globally at 
+/usr/share/gnome-shell/extensions.
+
+Restart your GNOME shell (Alt-F2 r is one way) and enable the 
+extension using: 
+
+     gnome-shell-extension-tool -e movehotcorner@fpmurphy.com
+
+To disable the extension:
+
+     gnome-shell-extension-tool -d movehotcorner@fpmurphy.com
+
+Other tools such as gnome-tweak-tool, gsettings and dconf-editor
+can also be used to enable or disable the extension. 
+
+If the extension does not install, check the version number in
+metadate.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+
+Options
+-------
+
+There are a number of options that you can configure. See
+the top of extension.js for details.  Also stylesheet.css.
+
+
+Notes:
+------
+
+This is experimental software. 
+
+All other extensions should be removed before using this 
+extension for the first time.  Once you have confirmed that
+this extension works in your particular environment, you can 
+re-install or re-enable your other extensions.
+
+This has only been tested on Fedora 16 without any other
+installed extensions.  The activitiesbuttoni@fpmurphy.com
+extension is known to interfer with displaying the ripples. 
+
+This only works with one monitor. No attempt had been made to 
+handle multiple monitors.
+
+
+Misc:
+-----
+
+The latest version of my GNOME extensions can always be found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions from time to time on 
+my blog at:
+
+     http://blog.fpmurphy.com
+
+You can contact me at gse@fpmurphy.com to report bugs or
+enhancements or to request assistance.

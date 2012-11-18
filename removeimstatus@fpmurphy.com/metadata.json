@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"], 
+   "version": "1.0",
+   "uuid": "removeimstatus@fpmurphy.com", 
+   "name": "Remove IM", 
+   "description": "Remove IM and status components from user menu.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localdir": "locale"
+}

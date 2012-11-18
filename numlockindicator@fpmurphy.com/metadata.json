@@ -1,0 +1,10 @@
+{
+   "shell-version": [ "3.2" ],
+   "version": ["1.0"],
+   "uuid": "numlockindicator@fpmurphy.com",
+   "name": "Numlock Status Indicator",
+   "description": "Show status of keyboard numlock key.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

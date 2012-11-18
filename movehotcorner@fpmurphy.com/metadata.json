@@ -1,0 +1,10 @@
+{ 
+   "shell-version": ["3.2"], 
+   "version": "2.0",
+   "uuid": "movehotcorner@fpmurphy.com",
+   "name": "Move Hot Corner",
+   "description": "Move hot corner to upper right corner of Panel",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

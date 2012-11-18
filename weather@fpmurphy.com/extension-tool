@@ -1,0 +1,144 @@
+#!/usr/bin/python
+#
+#   Copyright (c) Finnbarr P. Murphy 2012.  All rights reserved.
+#
+#      Name: extension-tool 
+#
+#   Version: 1.4 (03/9/2012)
+#
+#   License: Attribution Assurance License (see www.opensource.org/licenses)
+#
+
+
+import os
+import re
+import socket
+import subprocess
+import sys
+import argparse
+import tempfile
+try:
+    import json
+except ImportError:
+    try:
+        import simplejson as json
+    except ImportError:
+        print 'The Python simplejson module is required'
+        sys.exit(1)
+
+from gi.repository import Gio
+from gi.repository import GLib
+
+state = { 1:"enabled", 2:"disabled", 3:"error", 4:"out of date", 5:"downloading"}
+type  = { 1:"system", 2:"per user"}
+
+ENABLED_EXTENSIONS_KEY = 'enabled-extensions'
+
+class GnomeShell:
+
+    def __init__(self):
+        d = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+        self._proxy = Gio.DBusProxy.new_sync(
+                            d, 0, None,
+                            'org.gnome.Shell',
+                            '/org/gnome/Shell',
+                            'org.gnome.Shell',
+                            None)
+
+    def execute_javascript(self, js):
+        result, output = self._proxy.Eval('(s)', js)
+        if not result:
+            raise Exception(output)
+        return output
+
+    def list_extensions(self):
+        out = self.execute_javascript('const ExtensionSystem = imports.ui.extensionSystem; ExtensionSystem.extensionMeta')
+        return json.loads(out)
+
+
+def enable_extension(uuid):
+    settings = Gio.Settings(schema='org.gnome.shell')
+    extensions = settings.get_strv(ENABLED_EXTENSIONS_KEY)
+
+    if uuid in extensions:
+        print >> sys.stderr, "%r is already enabled." % (uuid)
+        sys.exit(1)
+
+    s = GnomeShell()
+    l = s.list_extensions()
+    for k, v in l.iteritems():
+        if v["uuid"] == uuid:
+            extensions.append(uuid)
+            settings.set_strv(ENABLED_EXTENSIONS_KEY, extensions)
+            print "%r is now enabled." % (uuid)
+            sys.exit(0) 
+
+    print >> sys.stderr, "%r is not loaded. Cannot enable." % (uuid)
+    sys.exit(1)
+
+def disable_extension(uuid):
+    settings = Gio.Settings(schema='org.gnome.shell')
+    extensions = settings.get_strv(ENABLED_EXTENSIONS_KEY)
+
+    if uuid not in extensions:
+        print >> sys.stderr, "%r is not enabled or installed." % (uuid,)
+        sys.exit(1)
+
+    # Use a while loop here to remove *all* mentions instances
+    # of the extension. Some faulty tools like to append more than one.
+    while uuid in extensions:
+        extensions.remove(uuid)
+
+    settings.set_strv(ENABLED_EXTENSIONS_KEY, extensions)
+    print "%r is now disabled." % (uuid,)
+
+def disable_all_extensions():
+    settings = Gio.Settings(schema='org.gnome.shell')
+    extensions = settings.get_strv(ENABLED_EXTENSIONS_KEY)
+
+    for uuid in extensions:
+        print "disabling %s" % (uuid)
+
+    del extensions[:]
+    settings.set_strv(ENABLED_EXTENSIONS_KEY, extensions)
+    print "All extensions now disabled"
+
+def list_extensions():
+    s = GnomeShell()
+
+    l = s.list_extensions()
+    for k, v in l.iteritems():
+        print '%s: %s, %s' % (v["uuid"], state[v["state"]], type[v["type"]])
+    print
+
+def main():
+    parser = argparse.ArgumentParser(description="GNOME Shell extension tool")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-d", "--disable", nargs=1, action="store", dest="disable",
+                       metavar="uuid", help="disable a GNOME Shell extension")
+    group.add_argument("-D", "--disable-all", dest="disableall", 
+                       action="store_true", help="disable all GNOME Shell extensions")
+    group.add_argument("-e", "--enable", nargs=1, action="store", dest="enable",
+                       metavar="uuid", help="enable a GNOME Shell extension")
+    group.add_argument("-l", "--list-extension", dest="listext", 
+                       action="store_true", help="list GNOME Shell extensions")
+    group.add_argument('-v', '--version', action='version', version='%(prog)s 1.0')
+
+    args = parser.parse_args()
+
+    if args.disable:
+        disable_extension("".join(args.disable))
+    elif args.disableall:
+        disable_all_extensions()
+    elif args.enable:
+        enable_extension("".join(args.enable))
+    elif args.listext:
+        list_extensions()
+    else:
+        parser.print_usage()
+        sys.exit(0)
+
+if __name__ == "__main__":
+    main()
+
+

@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"], 
+   "version": "2.0",
+   "uuid": "panellaunchers-with-tooltips@fpmurphy.com", 
+   "name": "Panel Launchers With Tooltips", 
+   "description": "Add favourite launchers to Panel", 
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

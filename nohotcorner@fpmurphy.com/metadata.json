@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"],
+   "version": ["2.0"],
+   "uuid": "nohotcorner@fpmurphy.com",
+   "name": "No Hot Corner",
+   "description": "Remove hot corner from top panel.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

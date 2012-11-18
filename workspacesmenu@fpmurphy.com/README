@@ -1,0 +1,101 @@
+                           README
+                         ==========  
+
+License
+-------
+
+Copyright (c) 2011 Finnbarr P. Murphy.  All rights reserved. 
+
+his program is free software; you can redistribute it and/or
+modify it under the terms of version 2 of the GNU General Public 
+License as published by the Free Software Foundation
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License at 
+
+       http://www.gnu.org/licenses/gpl-2.0.html
+
+for more details and to get a copy of the full license.
+
+
+
+Notice To Packagers
+-------------------
+
+Please contact me before packaging this extension.
+
+
+Purpose:
+--------
+
+Create and manage (hide or show) a workspaces menu on the RHS 
+of the top panel.
+
+
+Installation:
+-------------
+
+Copy the tarball to $HOME/.local/share/gnome-shell/extensions
+and unpack it.  A directory called workspacesmenu@fpmurphy.com
+should be created. It can also be installed globally at 
+/usr/share/gnome-shell/extensions.
+
+Restart your GNOME shell (Alt-F2 r is one way) and enable the 
+extension using: 
+
+     gnome-shell-extension-tool -e workspacesmenu@fpmurphy.com
+
+To disable the extension:
+
+     gnome-shell-extension-tool -d workspacesmenu@fpmurphy.com
+
+Other tools such as gnome-tweak-tool can also be used to
+enable or disable the extension. 
+
+If the extension does not install, check the version number in
+metadate.json.  You may have to change it to work with your
+particular version of the GNOME Shell. If this does not fix 
+the problem, use Looking Glass (Alt-F2 lg) to see what the
+error message is.
+
+
+Version:
+--------
+
+v1.0   5/1/2011    Initial version for GNOME 3.0 
+
+v2.0   11/05/2011  Initial version for GNOME 3.2
+
+
+Notes:
+------
+
+This version of the extension does NOT work on versions of 
+the GNOME Shell < 3.2.
+
+This has only been tested on Fedora 16 and GNOME Shell 3.2.1.
+
+As of the date of the latest version of this extension, there are 
+no officially published APIs for the GNOME Shell. This extension 
+relies on internal structures and variables which may or may 
+not be present in future versions of the GNOME Shell.
+
+
+Misc:
+-----
+
+The latest version of my GNOME Shell extensions can always be 
+found at: 
+
+     http://fpmurphy.com/gnome-shell-extensions
+
+I discuss the GNOME Shell and extensions on my blog at:
+
+     http://blog.fpmurphy.com
+
+Bugs, comments and enhancement requests to:
+
+     gse@fpmurphy.com
+

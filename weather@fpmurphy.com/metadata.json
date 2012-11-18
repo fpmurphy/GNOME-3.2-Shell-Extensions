@@ -1,0 +1,10 @@
+{ 
+   "shell-version": ["3.2"], 
+   "version": "2.2",
+   "uuid": "weather@fpmurphy.com",
+   "name": "Weather",
+   "description": "Display current weather information and five day forecast.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "localedir"
+}

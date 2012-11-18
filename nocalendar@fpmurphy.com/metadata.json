@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"],
+   "version": ["1.0"],
+   "uuid": "nocalendar@fpmurphy.com",
+   "name": "Remove Calendar",
+   "description": "Remove calendar from top panel.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

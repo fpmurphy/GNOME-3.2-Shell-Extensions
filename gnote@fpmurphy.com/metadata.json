@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"], 
+   "version": "2.0",
+   "uuid": "gnote@fpmurphy.com", 
+   "name": "Move Gnote", 
+   "description": "Move Gnote from Message Tray to Panel Status Area",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "locale"
+}

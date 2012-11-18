@@ -1,0 +1,19 @@
+.panel-launcher-box {
+    spacing: 7px;
+}
+
+.panel-launcher {
+}
+
+.panel-launcher-label {
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 5px;
+    padding: 2px 12px;
+    background-color: rgba(0,0,0,0.9);
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    -x-offset: 8px; 
+    -y-offset: 30px; 
+}

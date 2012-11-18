@@ -1,0 +1,10 @@
+.looking-glass-button {
+    padding: 0px 5px;
+    transition-duration: 100;
+}
+
+.looking-glass-button-active {
+    border-image: url("lg-button-border.svg") 10 10 0 2;
+    background-image: url("lg-button-highlight-wide.svg");
+    text-shadow: black 0px 2px 2px;
+}

@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"], 
+   "version": "2.0",
+   "uuid": "swapsuspendpoweroff@fpmurphy.com", 
+   "name": "Swap Suspend Power Off", 
+   "description": "Swap the Suspend and Power Off options in User Menu",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localdir": "locale"
+}

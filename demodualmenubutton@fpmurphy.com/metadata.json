@@ -1,0 +1,10 @@
+{ 
+   "shell-version": ["3.2"], 
+   "version": "1.0",
+   "uuid": "demodualmenubutton@fpmurphy.com",
+   "name": "Demo",
+   "description": "Demonstrate top panel button with separate left and right mouse button menus.",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "original-authors": "Finnbarr P. Murphy",
+   "localedir": "localedir"
+}

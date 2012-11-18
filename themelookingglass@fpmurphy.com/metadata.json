@@ -1,0 +1,10 @@
+{
+   "shell-version": ["3.2"],
+   "version": "2.0",
+   "uuid": "themelookingglass@fpmurphy.com",
+   "name": "Theme Looking Glass",
+   "description": "Theme the Looking Glass debugger",
+   "original-authors": "Finnbarr P. Murphy",
+   "url": "http://fpmurphy.com/gnome-shell-extensions",
+   "localedir": "localedir"
+}

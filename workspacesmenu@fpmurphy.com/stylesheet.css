@@ -1,0 +1,11 @@
+.workspaces-button {
+    padding: 0px 7px;
+    border: 2px solid rgba(200,200,200, 0.7); 
+    border-radius: 2px;
+}
+
+.workspaces-menu {
+    color: #ffffff;
+    font-size: 10.5pt;
+    min-width: 25px;
+}
